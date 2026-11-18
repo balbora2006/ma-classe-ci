@@ -1,0 +1,11 @@
+name: Premier workflow
+on: push
+jobs:
+  bonjour:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Dire bonjour
+        run: echo "Bonjour depuis GitHub Actions"
+      - name: Lister les fichiers
+        run: ls -la
